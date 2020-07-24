@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		BB0411BD246B459A00B81F06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411BC246B459A00B81F06 /* AppDelegate.swift */; };
 		BB0411BF246B459A00B81F06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411BE246B459A00B81F06 /* SceneDelegate.swift */; };
-		BB0411C1246B459A00B81F06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411C0246B459A00B81F06 /* ViewController.swift */; };
 		BB0411C4246B459A00B81F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0411C2246B459A00B81F06 /* Main.storyboard */; };
 		BB0411C6246B459F00B81F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0411C5246B459F00B81F06 /* Assets.xcassets */; };
 		BB0411C9246B459F00B81F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0411C7246B459F00B81F06 /* LaunchScreen.storyboard */; };
+		BB0411D4246B461700B81F06 /* SelectCoritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411D3246B461700B81F06 /* SelectCoritoViewController.swift */; };
+		BB0411D6246B466800B81F06 /* Coritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411D5246B466800B81F06 /* Coritos.swift */; };
+		BB0411D8246B6B1400B81F06 /* CoritosBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411D7246B6B1400B81F06 /* CoritosBrain.swift */; };
+		BB0411DA246B762700B81F06 /* CoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411D9246B762700B81F06 /* CoritosViewController.swift */; };
+		BB6535CD2472FD82005B287E /* SearchBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6535CC2472FD82005B287E /* SearchBrain.swift */; };
+		BBF5AB96247C937A00866BEB /* SliderFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5AB95247C937A00866BEB /* SliderFont.swift */; };
+		BBF5AB98247DAACF00866BEB /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5AB97247DAACF00866BEB /* FavoritosViewController.swift */; };
+		BBF5AB9E248EB6A900866BEB /* ContactanosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5AB9D248EB6A900866BEB /* ContactanosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB0411B9246B459A00B81F06 /* Coritos Adventistas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coritos Adventistas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0411BC246B459A00B81F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB0411BE246B459A00B81F06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB0411C0246B459A00B81F06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB0411C3246B459A00B81F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB0411C5246B459F00B81F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB0411C8246B459F00B81F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB0411CA246B459F00B81F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0411D3246B461700B81F06 /* SelectCoritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCoritoViewController.swift; sourceTree = "<group>"; };
+		BB0411D5246B466800B81F06 /* Coritos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coritos.swift; sourceTree = "<group>"; };
+		BB0411D7246B6B1400B81F06 /* CoritosBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoritosBrain.swift; sourceTree = "<group>"; };
+		BB0411D9246B762700B81F06 /* CoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoritosViewController.swift; sourceTree = "<group>"; };
+		BB6535CC2472FD82005B287E /* SearchBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBrain.swift; sourceTree = "<group>"; };
+		BBF5AB95247C937A00866BEB /* SliderFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderFont.swift; sourceTree = "<group>"; };
+		BBF5AB97247DAACF00866BEB /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
+		BBF5AB9D248EB6A900866BEB /* ContactanosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactanosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,46 @@
 		BB0411BB246B459A00B81F06 /* Coritos Adventistas */ = {
 			isa = PBXGroup;
 			children = (
+				BB0411D2246B45D000B81F06 /* Model */,
+				BB0411D1246B45C700B81F06 /* View */,
+				BB0411D0246B45B600B81F06 /* Controller */,
 				BB0411BC246B459A00B81F06 /* AppDelegate.swift */,
 				BB0411BE246B459A00B81F06 /* SceneDelegate.swift */,
-				BB0411C0246B459A00B81F06 /* ViewController.swift */,
-				BB0411C2246B459A00B81F06 /* Main.storyboard */,
 				BB0411C5246B459F00B81F06 /* Assets.xcassets */,
 				BB0411C7246B459F00B81F06 /* LaunchScreen.storyboard */,
 				BB0411CA246B459F00B81F06 /* Info.plist */,
 			);
 			path = "Coritos Adventistas";
+			sourceTree = "<group>";
+		};
+		BB0411D0246B45B600B81F06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB0411D3246B461700B81F06 /* SelectCoritoViewController.swift */,
+				BB0411D9246B762700B81F06 /* CoritosViewController.swift */,
+				BBF5AB97247DAACF00866BEB /* FavoritosViewController.swift */,
+				BBF5AB9D248EB6A900866BEB /* ContactanosViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB0411D1246B45C700B81F06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB0411C2246B459A00B81F06 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB0411D2246B45D000B81F06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB0411D5246B466800B81F06 /* Coritos.swift */,
+				BB0411D7246B6B1400B81F06 /* CoritosBrain.swift */,
+				BB6535CC2472FD82005B287E /* SearchBrain.swift */,
+				BBF5AB95247C937A00866BEB /* SliderFont.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB0411C1246B459A00B81F06 /* ViewController.swift in Sources */,
+				BB0411D8246B6B1400B81F06 /* CoritosBrain.swift in Sources */,
 				BB0411BD246B459A00B81F06 /* AppDelegate.swift in Sources */,
+				BB0411DA246B762700B81F06 /* CoritosViewController.swift in Sources */,
+				BB0411D4246B461700B81F06 /* SelectCoritoViewController.swift in Sources */,
 				BB0411BF246B459A00B81F06 /* SceneDelegate.swift in Sources */,
+				BBF5AB96247C937A00866BEB /* SliderFont.swift in Sources */,
+				BB6535CD2472FD82005B287E /* SearchBrain.swift in Sources */,
+				BB0411D6246B466800B81F06 /* Coritos.swift in Sources */,
+				BBF5AB9E248EB6A900866BEB /* ContactanosViewController.swift in Sources */,
+				BBF5AB98247DAACF00866BEB /* FavoritosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +336,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57R4ZFVKDM;
 				INFOPLIST_FILE = "Coritos Adventistas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JosePimentel.Coritos-Adventistas";
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JosePimentel.CoritosAdventistas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,14 +357,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57R4ZFVKDM;
 				INFOPLIST_FILE = "Coritos Adventistas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JosePimentel.Coritos-Adventistas";
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JosePimentel.CoritosAdventistas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
