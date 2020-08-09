@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sWz-mY-HKn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sWz-mY-HKn">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -49,38 +49,39 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                             </searchBar>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41N-3W-WpO">
-                                <rect key="frame" x="0.0" y="729" width="375" height="49"/>
-                                <color key="backgroundColor" red="0.34509803921568627" green="0.70588235294117641" blue="0.68235294117647061" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KND-El-6X9">
+                                <rect key="frame" x="0.0" y="729" width="375" height="83"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.70588235290000001" blue="0.68235294120000001" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <tabBarItem tag="1" title="Favoritos" image="star.fill" catalog="system" selectedImage="star.fill" id="OLO-nh-ow3" userLabel="Favoritos"/>
-                                    <tabBarItem tag="2" title="Contactanos" image="envelope.fill" catalog="system" selectedImage="envelope.fill" id="adS-yb-Qou"/>
+                                    <tabBarItem tag="1" title="Favoritos" image="star.fill" catalog="system" selectedImage="star.fill" id="Pmn-rd-Ygk" userLabel="Favoritos"/>
+                                    <tabBarItem tag="2" title="Contactanos" image="envelope.fill" catalog="system" selectedImage="envelope.fill" id="uTw-1w-xbl"/>
                                 </items>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Daw-J1-DTW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6cq-ci-iyr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="41N-3W-WpO" secondAttribute="bottom" id="FZ6-CP-5hd"/>
-                            <constraint firstItem="Daw-J1-DTW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HIC-k4-Cbw"/>
-                            <constraint firstItem="41N-3W-WpO" firstAttribute="top" secondItem="BRU-TZ-QSl" secondAttribute="bottom" id="Kyr-Ku-1YJ"/>
-                            <constraint firstItem="41N-3W-WpO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wyp-Zg-QK0"/>
-                            <constraint firstItem="BRU-TZ-QSl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xeo-5s-aJF"/>
-                            <constraint firstItem="BRU-TZ-QSl" firstAttribute="top" secondItem="Daw-J1-DTW" secondAttribute="bottom" id="oYI-M5-Qvw"/>
-                            <constraint firstItem="41N-3W-WpO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qMg-Aw-bnG"/>
-                            <constraint firstItem="BRU-TZ-QSl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tD3-v5-Suf"/>
-                            <constraint firstItem="Daw-J1-DTW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tlY-gj-frJ"/>
-                            <constraint firstItem="BRU-TZ-QSl" firstAttribute="top" secondItem="Daw-J1-DTW" secondAttribute="bottom" id="xiz-dw-frY"/>
+                            <constraint firstItem="Daw-J1-DTW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Fy-BC-HwH"/>
+                            <constraint firstAttribute="bottom" secondItem="KND-El-6X9" secondAttribute="bottom" id="Ccs-dg-e1n"/>
+                            <constraint firstItem="BRU-TZ-QSl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qnh-EP-OcH"/>
+                            <constraint firstItem="KND-El-6X9" firstAttribute="top" secondItem="BRU-TZ-QSl" secondAttribute="bottom" id="RQo-D4-Mwm"/>
+                            <constraint firstItem="Daw-J1-DTW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UAS-p5-uSN"/>
+                            <constraint firstItem="KND-El-6X9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZgG-Tv-3WG"/>
+                            <constraint firstItem="KND-El-6X9" firstAttribute="top" secondItem="BRU-TZ-QSl" secondAttribute="bottom" id="a4m-DH-YdB"/>
+                            <constraint firstItem="BRU-TZ-QSl" firstAttribute="top" secondItem="Daw-J1-DTW" secondAttribute="bottom" id="dvq-OA-yqu"/>
+                            <constraint firstItem="Daw-J1-DTW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mkG-Vz-Qpe"/>
+                            <constraint firstItem="KND-El-6X9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="srR-en-Ppj"/>
+                            <constraint firstItem="BRU-TZ-QSl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wgm-9V-5v8"/>
+                            <constraint firstItem="BRU-TZ-QSl" firstAttribute="top" secondItem="Daw-J1-DTW" secondAttribute="bottom" id="yEK-KM-jO3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ra6-34-EY0"/>
                     <connections>
-                        <outlet property="contactUs" destination="adS-yb-Qou" id="WwB-5Q-hgq"/>
-                        <outlet property="favorite" destination="OLO-nh-ow3" id="pJg-Dp-t1H"/>
+                        <outlet property="contactUs" destination="uTw-1w-xbl" id="c8w-zy-EB8"/>
+                        <outlet property="favorite" destination="Pmn-rd-Ygk" id="KIb-Q3-1fx"/>
                         <outlet property="searchBar" destination="Daw-J1-DTW" id="IBE-rh-eQD"/>
                         <outlet property="selectTableView" destination="BRU-TZ-QSl" id="23v-ls-qwL"/>
-                        <outlet property="tabBar" destination="41N-3W-WpO" id="hFs-3a-XOM"/>
+                        <outlet property="tabBar" destination="KND-El-6X9" id="6fg-yh-cdr"/>
                         <segue destination="pTz-5E-TPc" kind="show" identifier="Coritos" id="Plf-aP-vxJ"/>
                         <segue destination="Ftn-vc-fYd" kind="show" identifier="favoritos" id="cwf-dh-IoV"/>
                         <segue destination="oSi-Fw-rV0" kind="show" identifier="contactanos" id="nea-D2-AJ2"/>
@@ -144,7 +145,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.34509803921568627" green="0.70588235294117641" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.41568627450980389" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="8FG-e7-s4F" firstAttribute="trailing" secondItem="orG-0S-0na" secondAttribute="trailing" id="BJB-Rr-eOR"/>
                             <constraint firstItem="gn8-KD-dUN" firstAttribute="leading" secondItem="orG-0S-0na" secondAttribute="leading" id="GX2-ak-V15"/>
@@ -220,7 +222,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.34509803921568627" green="0.70588235294117641" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.41568627450980389" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OyK-fs-hJZ" firstAttribute="trailing" secondItem="y8W-ch-uri" secondAttribute="trailing" id="Kxc-SL-3O8"/>
                             <constraint firstItem="OyK-fs-hJZ" firstAttribute="leading" secondItem="y8W-ch-uri" secondAttribute="leading" id="PjI-kz-Zzd"/>
@@ -261,7 +263,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.34509803921568627" green="0.70588235294117641" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.41568627450980389" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sgy-4S-Wwd" firstAttribute="bottom" secondItem="068-fI-kSr" secondAttribute="bottom" id="6MC-KT-YGR"/>
                             <constraint firstItem="sgy-4S-Wwd" firstAttribute="leading" secondItem="068-fI-kSr" secondAttribute="leading" id="aOO-Rr-AFP"/>
@@ -301,6 +303,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="Plf-aP-vxJ"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
     <resources>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="playpause.fill" catalog="system" width="128" height="73"/>

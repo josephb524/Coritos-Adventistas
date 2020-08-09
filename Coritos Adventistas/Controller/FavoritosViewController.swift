@@ -30,12 +30,20 @@ class FavoritosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.favoritosTableView.reloadData()
         coritosFavoritos()
         
         favoritosTableView.delegate = self
         favoritosTableView.dataSource = self
         favoritosSearch.delegate = self
+    }
+    
+    //to reload the view everytime you add or remove form favoritos
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        favoritosArray.removeAll()
+        coritosFavoritos()
+        self.favoritosTableView.reloadData()
     }
     
     func coritosFavoritos() {
