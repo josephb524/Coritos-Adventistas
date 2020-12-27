@@ -193,6 +193,7 @@ extension CoritosViewController: UITabBarDelegate {
                 else {return}
                 
                 audioPlayer = AVPlayer(url: url)
+                audioPlayer!.automaticallyWaitsToMinimizeStalling = false
                 
                 if coritoRate == 1.0 {
                     audioPlayer!.pause()
