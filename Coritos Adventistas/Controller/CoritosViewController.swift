@@ -65,6 +65,8 @@ class CoritosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .light
+        
         loadCorito()
         
     }

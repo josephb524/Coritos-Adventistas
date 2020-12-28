@@ -32,6 +32,8 @@ class SelectCoritoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .light
+        
         selectTableView.delegate = self
         selectTableView.dataSource = self
         searchBar.delegate = self
