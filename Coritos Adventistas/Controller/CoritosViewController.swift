@@ -71,6 +71,21 @@ class CoritosViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        if defaults.bool(forKey: "DarkMode") !=  true{
+            
+            overrideUserInterfaceStyle = .dark
+            tabBar.overrideUserInterfaceStyle = .dark
+        }
+        
+        else {
+            
+            overrideUserInterfaceStyle = .light
+            tabBar.overrideUserInterfaceStyle = .light
+        }
+    }
+    
     
     func getCoritoIndex(index: Int, favoritos: [Coritos], checkWhichController: Bool) {
         
@@ -233,6 +248,31 @@ extension CoritosViewController: UITabBarDelegate {
                 reproducirItem.title = "No Audio"
             }
             
+        }
+        
+        else if(item.tag == 4) {
+            
+            if (defaults.bool(forKey: "DarkMode") == false) {
+             
+                overrideUserInterfaceStyle = .light
+                tabBar.overrideUserInterfaceStyle = .light
+                tabBar.barTintColor = UIColor.white
+                navigationController!.overrideUserInterfaceStyle = .light
+                
+                defaults.removeObject(forKey: "DarkMode")
+                defaults.set(true, forKey: "DarkMode")
+            }
+            
+            else {
+                
+                overrideUserInterfaceStyle = .dark
+                tabBar.overrideUserInterfaceStyle = .dark
+                tabBar.barTintColor = UIColor.black
+                navigationController!.overrideUserInterfaceStyle = .dark
+                
+                defaults.removeObject(forKey: "DarkMode")
+                defaults.set(false, forKey: "DarkMode")
+            }
         }
     }
 }

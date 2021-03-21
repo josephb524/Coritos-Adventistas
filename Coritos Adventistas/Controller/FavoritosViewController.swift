@@ -65,6 +65,16 @@ class FavoritosViewController: UIViewController {
                 i += 1
             }
         }
+        
+        if defaults.bool(forKey: "DarkMode") !=  true{
+            
+            overrideUserInterfaceStyle = .dark
+        }
+        
+        else {
+            
+            overrideUserInterfaceStyle = .light
+        }
     }
 }
 

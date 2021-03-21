@@ -12,6 +12,8 @@ class ContactanosViewController: UIViewController {
 
     @IBOutlet weak var contactanosText: UITextView!
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +33,21 @@ class ContactanosViewController: UIViewController {
         let text = "CONTACTANOS \n\nSi tienes alguna pregunta, queja o comentario acerca de como mejorar este aplicacion por favor escribanos a nuestro correo electronico oficial: josephb401@hotmail.com "
         
         return text
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        overrideUserInterfaceStyle = .light
+        
+        
+        if defaults.bool(forKey: "DarkMode") !=  true{
+            
+            overrideUserInterfaceStyle = .dark
+            UITabBar.appearance().overrideUserInterfaceStyle = .dark
+            
+            
+            navigationController!.overrideUserInterfaceStyle = .dark
+        }
+        
     }
 }

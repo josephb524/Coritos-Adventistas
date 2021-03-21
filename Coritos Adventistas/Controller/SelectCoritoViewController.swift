@@ -25,6 +25,7 @@ class SelectCoritoViewController: UIViewController {
     var isNotSearching = true
     var placeHolderStrn: String = ""
     
+    let defaults = UserDefaults.standard
     
     var search = SearchBrain()
     var coritosView = [Coritos]()
@@ -39,6 +40,22 @@ class SelectCoritoViewController: UIViewController {
         searchBar.delegate = self
         tabBar.delegate = self
         self.addDoneButtonOnKeyboard()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        overrideUserInterfaceStyle = .light
+        tabBar.barTintColor = UIColor.white
+        navigationController!.overrideUserInterfaceStyle = .light
+        
+        if defaults.bool(forKey: "DarkMode") !=  true{
+            
+            overrideUserInterfaceStyle = .dark
+            UITabBar.appearance().overrideUserInterfaceStyle = .dark
+            
+            navigationController!.overrideUserInterfaceStyle = .dark
+            tabBar.barTintColor = UIColor.black
+        }
     }
 }
 

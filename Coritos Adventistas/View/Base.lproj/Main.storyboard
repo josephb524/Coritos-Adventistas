@@ -114,6 +114,7 @@
                                     <tabBarItem tag="3" title="Reproducir" image="playpause.fill" catalog="system" id="yYQ-UT-mYk"/>
                                     <tabBarItem tag="1" title="Añadir/Remover Favoritos" image="star.fill" catalog="system" id="UmZ-Pa-zsV"/>
                                     <tabBarItem tag="2" title="Tamaño" image="textformat" catalog="system" id="HtA-wT-gfD"/>
+                                    <tabBarItem tag="4" title="Modo Oscuro/Claro" image="sun.max.fill" catalog="system" id="zsi-Th-ZSf"/>
                                 </items>
                                 <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tabBar>
@@ -309,6 +310,7 @@
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="playpause.fill" catalog="system" width="128" height="70"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="124"/>
         <image name="textformat" catalog="system" width="128" height="78"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
