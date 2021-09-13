@@ -16,6 +16,9 @@
 		BB0411D6246B466800B81F06 /* Coritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411D5246B466800B81F06 /* Coritos.swift */; };
 		BB0411D8246B6B1400B81F06 /* CoritosBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411D7246B6B1400B81F06 /* CoritosBrain.swift */; };
 		BB0411DA246B762700B81F06 /* CoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0411D9246B762700B81F06 /* CoritosViewController.swift */; };
+		BB2E2ABA26EC5E4200FE7125 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E2AB926EC5E4200FE7125 /* NetworkService.swift */; };
+		BB2E2ABC26EC5ECF00FE7125 /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E2ABB26EC5ECF00FE7125 /* DataAPI.swift */; };
+		BB2E2ABE26EC5F5C00FE7125 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E2ABD26EC5F5C00FE7125 /* APIError.swift */; };
 		BB6535CD2472FD82005B287E /* SearchBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6535CC2472FD82005B287E /* SearchBrain.swift */; };
 		BBF5AB96247C937A00866BEB /* SliderFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5AB95247C937A00866BEB /* SliderFont.swift */; };
 		BBF5AB98247DAACF00866BEB /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5AB97247DAACF00866BEB /* FavoritosViewController.swift */; };
@@ -34,6 +37,9 @@
 		BB0411D5246B466800B81F06 /* Coritos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coritos.swift; sourceTree = "<group>"; };
 		BB0411D7246B6B1400B81F06 /* CoritosBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoritosBrain.swift; sourceTree = "<group>"; };
 		BB0411D9246B762700B81F06 /* CoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoritosViewController.swift; sourceTree = "<group>"; };
+		BB2E2AB926EC5E4200FE7125 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BB2E2ABB26EC5ECF00FE7125 /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
+		BB2E2ABD26EC5F5C00FE7125 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		BB6535CC2472FD82005B287E /* SearchBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBrain.swift; sourceTree = "<group>"; };
 		BBF5AB95247C937A00866BEB /* SliderFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderFont.swift; sourceTree = "<group>"; };
 		BBF5AB97247DAACF00866BEB /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 		BB0411BB246B459A00B81F06 /* Coritos Adventistas */ = {
 			isa = PBXGroup;
 			children = (
+				BB2E2AB826EC5E1700FE7125 /* Network Service */,
 				BB0411D2246B45D000B81F06 /* Model */,
 				BB0411D1246B45C700B81F06 /* View */,
 				BB0411D0246B45B600B81F06 /* Controller */,
@@ -108,8 +115,18 @@
 				BB0411D7246B6B1400B81F06 /* CoritosBrain.swift */,
 				BB6535CC2472FD82005B287E /* SearchBrain.swift */,
 				BBF5AB95247C937A00866BEB /* SliderFont.swift */,
+				BB2E2ABB26EC5ECF00FE7125 /* DataAPI.swift */,
+				BB2E2ABD26EC5F5C00FE7125 /* APIError.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BB2E2AB826EC5E1700FE7125 /* Network Service */ = {
+			isa = PBXGroup;
+			children = (
+				BB2E2AB926EC5E4200FE7125 /* NetworkService.swift */,
+			);
+			path = "Network Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,14 +200,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2E2ABA26EC5E4200FE7125 /* NetworkService.swift in Sources */,
 				BB0411D8246B6B1400B81F06 /* CoritosBrain.swift in Sources */,
 				BB0411BD246B459A00B81F06 /* AppDelegate.swift in Sources */,
 				BB0411DA246B762700B81F06 /* CoritosViewController.swift in Sources */,
+				BB2E2ABC26EC5ECF00FE7125 /* DataAPI.swift in Sources */,
 				BB0411D4246B461700B81F06 /* SelectCoritoViewController.swift in Sources */,
 				BB0411BF246B459A00B81F06 /* SceneDelegate.swift in Sources */,
 				BBF5AB96247C937A00866BEB /* SliderFont.swift in Sources */,
 				BB6535CD2472FD82005B287E /* SearchBrain.swift in Sources */,
 				BB0411D6246B466800B81F06 /* Coritos.swift in Sources */,
+				BB2E2ABE26EC5F5C00FE7125 /* APIError.swift in Sources */,
 				BBF5AB9E248EB6A900866BEB /* ContactanosViewController.swift in Sources */,
 				BBF5AB98247DAACF00866BEB /* FavoritosViewController.swift in Sources */,
 			);
@@ -344,7 +364,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.JosePimentel.CoritosAdventistas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -365,7 +385,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.JosePimentel.CoritosAdventistas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

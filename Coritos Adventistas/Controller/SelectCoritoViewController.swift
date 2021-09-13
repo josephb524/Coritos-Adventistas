@@ -30,6 +30,7 @@ class SelectCoritoViewController: UIViewController {
     var search = SearchBrain()
     var coritosView = [Coritos]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,11 +48,14 @@ class SelectCoritoViewController: UIViewController {
         overrideUserInterfaceStyle = .light
         tabBar.barTintColor = UIColor.white
         navigationController!.overrideUserInterfaceStyle = .light
+        selectTableView.backgroundColor = UIColor.white
         
-        if defaults.bool(forKey: "DarkMode") !=  true{
+        if defaults.bool(forKey: "DarkMode") !=  true {
             
             overrideUserInterfaceStyle = .dark
             UITabBar.appearance().overrideUserInterfaceStyle = .dark
+            
+            selectTableView.backgroundColor = UIColor.black
             
             navigationController!.overrideUserInterfaceStyle = .dark
             tabBar.barTintColor = UIColor.black

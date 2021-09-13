@@ -34,9 +34,98 @@ class CoritosViewController: UIViewController {
     
     var coritoRate: Float = 0.0
     
+    var data = NetworkService()
+    
     let defaults = UserDefaults.standard
     
     func loadCorito() {
+        
+        if indexCorito > 5 && indexCorito < 11 {
+            
+            data.performRequest(i: (indexCorito - 1))
+        }
+        
+        else if indexCorito > 10 && indexCorito < 13 {
+            
+            data.performRequest(i: (indexCorito - 2))
+        }
+        
+        else if indexCorito > 12 && indexCorito < 14 {
+            
+            data.performRequest(i: (indexCorito - 3))
+        }
+        
+        else if indexCorito > 13 && indexCorito < 17 {
+            
+            data.performRequest(i: (indexCorito - 4))
+        }
+        
+        else if indexCorito > 16 && indexCorito < 30 {
+            
+            data.performRequest(i: (indexCorito - 5))
+        }
+        
+        else if indexCorito > 29 && indexCorito < 31 {
+            
+            data.performRequest(i: (indexCorito - 6))
+        }
+        
+        else if indexCorito > 30 && indexCorito < 36 {
+            
+            data.performRequest(i: (indexCorito - 7))
+        }
+        //problem might start here
+        else if indexCorito > 35 && indexCorito < 38 {
+            
+            data.performRequest(i: (indexCorito - 8))
+        }
+        
+        else if indexCorito > 37 && indexCorito < 39 {
+            
+            data.performRequest(i: (indexCorito - 9))
+        }
+        
+        else if indexCorito > 38 && indexCorito < 53 {
+            
+            data.performRequest(i: (indexCorito - 10))
+        }
+        
+        else if indexCorito > 52 && indexCorito < 62 {
+            
+            data.performRequest(i: (indexCorito - 11))
+        }
+        
+        else if indexCorito > 61 && indexCorito < 64 {
+            
+            data.performRequest(i: (indexCorito - 12))
+        }
+        
+        else if indexCorito > 63 && indexCorito < 70 {
+            
+            data.performRequest(i: (indexCorito - 13))
+        }
+        
+        else if indexCorito > 69 && indexCorito < 72 {
+            
+            data.performRequest(i: (indexCorito - 14))
+        }
+        
+        else if indexCorito > 71 && indexCorito < 75 {
+            
+            data.performRequest(i: (indexCorito - 15))
+        }
+        
+        else if indexCorito > 74 {
+            
+            data.performRequest(i: (indexCorito - 16))
+        }
+        
+        else {
+            
+            data.performRequest(i: indexCorito)
+        }
+        
+        
         
         textDisplay.text = coritosDisplay[indexCorito].coritos
         coritoTitle.title = "#" + coritosDisplay[indexCorito].title
@@ -77,12 +166,14 @@ class CoritosViewController: UIViewController {
             
             overrideUserInterfaceStyle = .dark
             tabBar.overrideUserInterfaceStyle = .dark
+            navigationController!.overrideUserInterfaceStyle = .dark
         }
         
         else {
             
             overrideUserInterfaceStyle = .light
             tabBar.overrideUserInterfaceStyle = .light
+            navigationController!.overrideUserInterfaceStyle = .light
         }
     }
     
@@ -200,10 +291,14 @@ extension CoritosViewController: UITabBarDelegate {
         
         else if(item.tag == 3) {
             
+            
             if coritosDisplay[indexCorito].coritoUrl != "" {
                 
                 let urlString: String?
-                urlString = coritosDisplay[indexCorito].coritoUrl
+                //urlString = coritosDisplay[indexCorito].coritoUrl
+                print(data.trackName)
+                
+                urlString = "https://discoveryprovider.audius7.prod-us-west-2.staked.cloud/v1/tracks/\(data.trackName)/stream?app_name=CoritoAdventistas"
                 
                 guard let url = URL(string: urlString!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
                     
