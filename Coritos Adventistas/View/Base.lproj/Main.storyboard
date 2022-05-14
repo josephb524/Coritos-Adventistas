@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sWz-mY-HKn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sWz-mY-HKn">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +21,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="identityCell" textLabel="X8f-iN-QEx" detailTextLabel="de2-sm-3f4" style="IBUITableViewCellStyleSubtitle" id="kUG-h0-qMp">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="55.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="55.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kUG-h0-qMp" id="5Zu-bp-FMa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="55.666667938232422"/>
@@ -168,7 +167,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Label" id="fqd-Bx-p1v" colorLabel="IBBuiltInLabel-Green"/>
                     <connections>
-                        <outlet property="coritoTitle" destination="fqd-Bx-p1v" id="2oV-UF-vCQ"/>
                         <outlet property="favoritoBtn" destination="UmZ-Pa-zsV" id="nPZ-TO-8WP"/>
                         <outlet property="fontLabel" destination="pYc-kU-dZy" id="RfN-kz-RXt"/>
                         <outlet property="fontSlider" destination="KUN-D9-YKu" id="Vlt-a5-kCH"/>
@@ -199,7 +197,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" textLabel="XIo-2w-qUk" detailTextLabel="Nyc-8d-xVW" style="IBUITableViewCellStyleSubtitle" id="GJh-ML-z4E">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="55.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="55.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GJh-ML-z4E" id="Z28-eR-Fzy">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="55.666667938232422"/>
