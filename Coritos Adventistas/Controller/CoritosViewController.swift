@@ -28,6 +28,7 @@ class CoritosViewController: UIViewController {
     var coritosDisplay = [Coritos]()
     
     var coritoFavorito: Bool = false
+    var playPause: Bool = true //This variable will be used to check if the audio was played before so I can play and pause it to pre load it
     var highlight: UIColor = #colorLiteral(red: 0.09795290977, green: 0.2151759565, blue: 0.3877361715, alpha: 1)
     var favoritoTitle: String = ""
     var audioPlayer: AVPlayer?
@@ -128,7 +129,8 @@ class CoritosViewController: UIViewController {
         
         
         textDisplay.text = coritosDisplay[indexCorito].coritos
-        coritoTitle.title = "#" + coritosDisplay[indexCorito].title
+        navigationItem.title = "#" + coritosDisplay[indexCorito].title
+        //coritoTitle.title = "#" + coritosDisplay[indexCorito].title
         
         favoritosArray = defaults.array(forKey: "Favoritos") as? [Int] ?? [Int]()
 
@@ -157,6 +159,10 @@ class CoritosViewController: UIViewController {
         overrideUserInterfaceStyle = .light
         
         loadCorito()
+        
+        reproducirAudio()
+        
+        
         
     }
     
@@ -224,9 +230,74 @@ class CoritosViewController: UIViewController {
                 loadView()
                 loadCorito()
             }
+        }
+    }
+    
+    func setAudioURL() -> String? {
+        
+        let urlString: String?
+        //urlString = coritosDisplay[indexCorito].coritoUrl
+        
+        urlString = "https://audius-discovery-12.cultur3stake.com/v1/tracks/\(data.trackName)/stream?app_name=CoritoAdventistas"
+        
+        guard let url = URL(string: urlString!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
             
+        else {return urlString}
+        
+        audioPlayer = AVPlayer(url: url)
+        audioPlayer!.automaticallyWaitsToMinimizeStalling = false
+        
+        return urlString
+    }
+    
+    func reproducirAudio() {
+        
+        if coritosDisplay[indexCorito].coritoUrl != "" {
+            
+            let urlString = setAudioURL()
+            
+            if coritoRate == 1.0 {
+                audioPlayer!.pause()
+                
+                reproducirItem.title = "Reproducir"
+                coritoRate = 0.0
+            }
+            
+            else if audioPlayer!.rate == 0.0 {
+                
+                if (coritosDisplay[indexCorito].title == "23. DIOS ESTÁ AQUÍ" || coritosDisplay[indexCorito].title == "33. SI NO ES ESO AMOR" || coritosDisplay[indexCorito].title == "70. CON GRAN GOZO Y PLACER") {
+                    
+                    let url1 = URL(string: urlString!)
+                    
+                    audioPlayer = AVPlayer(url: url1!)
+                    
+                }
+                
+                audioPlayer!.play()
+                reproducirItem.title = "Pausar"
+                
+                if playPause {
+                    
+                    audioPlayer!.pause()
+                    
+                    playPause = false
+                }
+                
+                //allow the device play music when the phone is in silent mode
+                do {
+                      try AVAudioSession.sharedInstance().setCategory(.playback)
+                   } catch(let error) {
+                       print(error.localizedDescription)
+                   }
+            }
+            
+            coritoRate = audioPlayer!.rate
         }
         
+        else {
+            
+            reproducirItem.title = "No Audio"
+        }
     }
 }
     
@@ -291,58 +362,7 @@ extension CoritosViewController: UITabBarDelegate {
         
         else if(item.tag == 3) {
             
-            
-            if coritosDisplay[indexCorito].coritoUrl != "" {
-                
-                let urlString: String?
-                //urlString = coritosDisplay[indexCorito].coritoUrl
-                print(data.trackName)
-                
-                urlString = "https://discoveryprovider.audius7.prod-us-west-2.staked.cloud/v1/tracks/\(data.trackName)/stream?app_name=CoritoAdventistas"
-                
-                guard let url = URL(string: urlString!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
-                    
-                else {return}
-                
-                audioPlayer = AVPlayer(url: url)
-                audioPlayer!.automaticallyWaitsToMinimizeStalling = false
-                
-                if coritoRate == 1.0 {
-                    audioPlayer!.pause()
-                    
-                    reproducirItem.title = "Reproducir"
-                    coritoRate = 0.0
-                }
-                
-                else if audioPlayer!.rate == 0.0 {
-                    
-                    if (coritosDisplay[indexCorito].title == "23. DIOS ESTÁ AQUÍ" || coritosDisplay[indexCorito].title == "33. SI NO ES ESO AMOR" || coritosDisplay[indexCorito].title == "70. CON GRAN GOZO Y PLACER") {
-                        
-                        let url1 = URL(string: urlString!)
-                        
-                        audioPlayer = AVPlayer(url: url1!)
-                        
-                    }
-                    
-                    audioPlayer!.play()
-                    reproducirItem.title = "Pausar"
-                    
-                    //allow the device play music when the phone is in silent mode
-                    do {
-                          try AVAudioSession.sharedInstance().setCategory(.playback)
-                       } catch(let error) {
-                           print(error.localizedDescription)
-                       }
-                }
-                
-                coritoRate = audioPlayer!.rate
-            }
-            
-            else {
-                
-                reproducirItem.title = "No Audio"
-            }
-            
+            reproducirAudio()
         }
         
         else if(item.tag == 4) {
